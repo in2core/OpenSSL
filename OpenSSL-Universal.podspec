@@ -46,11 +46,4 @@ Pod::Spec.new do |s|
   s.osx.vendored_libraries  = 'macos/lib/libcrypto.a', 'macos/lib/libssl.a'
 
   s.requires_arc = false
-
-  s.subspec 'Framework' do |sp|
-    sp.ios.deployment_target = '8.0'
-    sp.ios.vendored_frameworks = 'Frameworks/ios/OpenSSL.framework'
-    sp.osx.deployment_target = '10.9'
-    sp.osx.vendored_frameworks = 'Frameworks/macos/OpenSSL.framework'
-  end
 end
